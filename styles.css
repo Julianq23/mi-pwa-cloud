@@ -1,0 +1,18 @@
+:root{--navy:#1A2744;--blue:#2E6BD8;--bg:#F0F4F8;--text:#1E293B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+header{background:var(--navy);color:#fff;padding:2rem 1.25rem;text-align:center}
+header h1{font-size:2rem}
+.team{opacity:.85;margin-top:.25rem;font-size:.95rem}
+.badge{display:inline-block;margin-top:.75rem;padding:.25rem .75rem;border-radius:999px;background:#64748B;font-size:.85rem}
+.badge.online{background:#16A34A}.badge.offline{background:#DC2626}
+main{max-width:900px;margin:0 auto;padding:1.5rem 1.25rem}
+section{background:#fff;border-radius:12px;padding:1.25rem;margin-bottom:1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+h2{color:var(--navy);margin-bottom:.75rem;font-size:1.3rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{border-radius:10px;padding:1rem;border-top:5px solid}
+.card h3{margin-bottom:.4rem}.card small{color:#475569}
+.iaas{border-color:#F59E0B;background:#FFFBEB}.paas{border-color:var(--blue);background:#EFF6FF}.saas{border-color:#10B981;background:#ECFDF5}
+select{width:100%;padding:.6rem;font-size:1rem;border:1px solid #CBD5E1;border-radius:8px;margin-top:.5rem}
+.resultado{margin-top:.75rem;font-weight:600;min-height:1.5em}
+footer{text-align:center;padding:1.5rem;color:#64748B;font-size:.85rem}

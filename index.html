@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1A2744">
+  <title>Cloud Lab · Grupo 8</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>☁️ Cloud Computing</h1>
+    <p>Laboratorio 7 · Nuevas Tecnologías del Desarrollo · UMB</p>
+    <p class="team">Grupo 8: Julián Quiroz · Tatiana Torres · Asly Camelo</p>
+    <span id="status" class="badge">Comprobando conexión…</span>
+  </header>
+
+  <main>
+    <section>
+      <h2>Modelos de servicio</h2>
+      <div class="cards">
+        <article class="card iaas"><h3>IaaS</h3><p>Infraestructura virtual: servidores, red y almacenamiento.</p><small>Ej.: AWS EC2, Compute Engine</small></article>
+        <article class="card paas"><h3>PaaS</h3><p>Plataforma lista para desplegar código sin gestionar servidores.</p><small>Ej.: Vercel, Heroku, App Engine</small></article>
+        <article class="card saas"><h3>SaaS</h3><p>Software terminado que se usa desde el navegador.</p><small>Ej.: Google Drive, Microsoft 365</small></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Clasifica un servicio</h2>
+      <p>Elige un servicio y mira a qué modelo pertenece.</p>
+      <select id="servicio">
+        <option value="">— Selecciona —</option>
+        <option value="drive">Google Drive</option>
+        <option value="github">GitHub</option>
+        <option value="ec2">AWS EC2</option>
+        <option value="heroku">Heroku</option>
+        <option value="m365">Microsoft 365</option>
+        <option value="firebase">Firebase</option>
+        <option value="vercel">Vercel</option>
+      </select>
+      <p id="resultado" class="resultado"></p>
+    </section>
+
+    <section>
+      <h2>Esta app está en la nube</h2>
+      <p>Desplegada en <strong>Vercel</strong> (PaaS) desde un repositorio de GitHub. Funciona sin conexión gracias a su <em>service worker</em>.</p>
+      <p>Visitas en este dispositivo: <strong id="visitas">0</strong></p>
+    </section>
+  </main>
+
+  <footer>Ingeniería de Software · Universidad Manuela Beltrán · 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
